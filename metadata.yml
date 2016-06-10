@@ -1,0 +1,48 @@
+---
+title:  'It is actually possible to write ACM papers using Markdown'
+subtitle: 'With pandoc and a very long bash command'
+# unfortunately, ACM does not use standard LaTex for setting authors and asbtract
+# Therefore, the following blocks would not work
+#author:
+#- name: Daniel Graziotin
+#  affiliation: University of Stuttgart
+#- name: Author Two
+#  affiliation: University of Nowhere
+#tags: [nothing, nothingness]
+
+# abstract works
+abstract: |
+  This is the abstract.
+header-includes: |
+  \usepackage{booktabs}
+  \setcopyright{acmcopyright}
+  \doi{10.475/123_4}
+  \isbn{123-4567-24-567/08/06}
+  \conferenceinfo{PLDI '13}{June 16--19, 2013, Seattle, WA, USA}
+  \acmPrice{\$15.00}
+  \conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+  \numberofauthors{3}
+  \author{
+  \alignauthor
+  Ben Trovato\titlenote{Dr.~Trovato insisted his name be first.}\\
+         \affaddr{Institute for Clarity in Documentation}\\
+         \affaddr{1932 Wallamaloo Lane}\\
+         \affaddr{Wallamaloo, New Zealand}\\
+         \email{trovato@corporation.com}
+  % 2nd. author
+  \alignauthor
+  G.K.M. Tobin\\
+         \affaddr{Institute for Clarity in Documentation}\\
+         \affaddr{P.O. Box 1212}\\
+         \affaddr{Dublin, Ohio 43017-6221}\\
+         \email{webmaster@marysville-ohio.com}
+  % 3rd. author
+  \alignauthor Lars Th{\o}rv{\"a}ld\\
+         \affaddr{The Th{\o}rv{\"a}ld Group}\\
+         \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
+         \affaddr{Hekla, Iceland}\\
+         \email{larst@affiliation.org}
+  }
+
+
+...
