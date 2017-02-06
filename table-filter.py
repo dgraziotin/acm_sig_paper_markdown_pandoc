@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # Credits: Wagner Macedo, https://groups.google.com/forum/#!msg/pandoc-discuss/RUC-tuu_qf0/h-H3RRVt1coJ
 # This filter lets you have simple Pandoc tables (_with headers_) in a two-column layout such as those of ACM and IEEE.
 import pandocfilters as pf
