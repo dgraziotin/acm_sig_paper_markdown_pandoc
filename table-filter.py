@@ -34,7 +34,8 @@ def tbl_contents(s):
     for row in s:
         para = []
         for col in row:
-            para.extend(col[0]['c'])
+            if len(col) > 0:
+                para.extend(col[0]['c'])
             para.append(inlatex(' & '))
         result.extend(para)
         result[-1] = inlatex(r' \\' '\n')
