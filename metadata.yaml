@@ -1,0 +1,20 @@
+---
+title:  'It is actually possible to write IEEE papers using Markdown'
+subtitle: 'With pandoc and a very long bash command'
+author:
+  - name: Barry Nisly
+    affilation: Georgia Tech
+    location: San Diego
+    email: iluvpandoc@gatech.edu
+date: February 13st, 2019
+tags: [nothing, nothingness]
+numbersections: yes
+lang: en
+babel-lang: english
+abstract: |
+  The possibilities of having markdown converted into something useful...
+header-includes: |
+  \usepackage{booktabs}
+
+...
+
